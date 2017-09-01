@@ -144,17 +144,6 @@
     border-bottom: 1px solid #66757f;
 }
 
-.follow:hover {
-    border-color: #1DA1F2;
-    color: #1DA1F2;
-    background-color: #eaf5fd !important;
-}
-
-.unfollow:hover {
-    border-color: #1DA1F2;
-    color: #1DA1F2;
-    background-color: #eaf5fd !important;
-}
 
 .user-actions {
     -moz-box-align: center;

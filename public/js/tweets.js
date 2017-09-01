@@ -183,20 +183,6 @@ jQuery(document).ready(function() {
         }
     });
     tweets.init();
-    jQuery('body').on('click', '.follow', function(e) {
-        var uId = $(this).data('id');
-        if (!uId) {
-            return;
-        }
-        tweets.follow(uId);
-    });
-    jQuery('body').on('click', '.unfollow', function(e) {
-        var uId = $(this).data('id');
-        if (!uId) {
-            return;
-        }
-        tweets.unFollow(uId);
-    });
 
     jQuery('body').on('click', '.user-actions', function(e) {
         var userId = $(this).data('user_id');
