@@ -20,7 +20,7 @@ class TwitterController extends Controller
     {
         try {
             $data = Cache::remember('getUserTimeline', 5, function() {
-                return Twitter::getUserTimeline(['trim_user' => 2823805141, 'exclude_replies' => false,'include_rts' => true, 'format' => 'array']);
+                return Twitter::getUserTimeline(['exclude_replies' => false,'include_rts' => true, 'format' => 'array']);
             });
             $data = !empty($data) ? $data : [];
             return response()->json($data);
